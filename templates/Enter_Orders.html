@@ -17,9 +17,9 @@
   </thead>
   <tbody class="table-group-divider">
   {% for key, value in result.items() %}
-   <tr class="thead-light">
+   <tr {%if value[0]%} class="thead-light text-bg-success bg-opacity-75{%endif%}">
 
-    <td>{{value[0]}}</td>
+    <td>{{key}}</td>
     <td>{{value[1]}}</td>
     <td>{{value[3]}}</td>
     <td>{{value[2]}}</td>

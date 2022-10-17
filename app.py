@@ -28,7 +28,7 @@ def registered_form():
 
     
 
-    if key1 is None:
+    if key1 is None or key1 <= 0:
         message2 = """<div class="alert alert-danger text-center" role="alert">Quanity Must Be Greater Than 0</div>"""
         return render_template('index.html', message2=Markup(message2))
     else:
@@ -42,11 +42,14 @@ def registered_form():
             total = float(key1 * 2.50)
                 
         
+        isChecked = False
+        
         if request.form.get("checkbox"):
             total = (math.ceil(total))
+            isChecked = True
         
         
-    dirForItem[orderNum] = [orderNum, value, total, key1]
+    dirForItem[orderNum] = [isChecked, value, total, key1]
  
     return render_template('Enter_Orders.html', result=dirForItem)
 
