@@ -1,0 +1,42 @@
+{% extends '_layout.html' %}
+{% block body %}
+
+
+  {% if result|length ==0 %}
+  <h1 class="h1 text-center p-3">No Orders Found</h1>
+  {%else%}
+  <table class="table table-hover mb-3 table-responsive-sm">
+  <thead>
+    <tr>
+      <th scope="col">Order Number</th>
+      <th scope="col">Button Type</th>
+      <th scope="col">Quanity</th>
+      <th scope="col">Total</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+  {% for key, value in result.items() %}
+   <tr class="thead-light">
+
+    <td>{{value[0]}}</td>
+    <td>{{value[1]}}</td>
+    <td>{{value[3]}}</td>
+    <td>{{value[2]}}</td>
+       <td>       
+        <form action="/delete" method="get">
+            <input type="text" name="delete" value="{{key}}" hidden>
+            <input class="btn btn-danger" type="submit" value="delete">
+        </form>
+       </td>
+   </tr>
+  {% endfor %} 
+  </tbody>
+</table>
+
+{%endif%}
+
+
+
+
+{% endblock %}
