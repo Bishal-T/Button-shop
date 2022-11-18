@@ -11,5 +11,12 @@ The order is then stored locally, and donations are highlighted.
 Users also have the option to delete their orders.
 
 
+# Homepage 
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/78559271/202711132-1fc11263-03e3-4051-815f-d899c6a6835e.png">
+
+# Orders Page
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/78559271/202711470-eedd2d55-7aa9-403c-9b7e-a6be2e07a07c.png">
+
+
 
 
