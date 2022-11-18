@@ -1,4 +1,3 @@
-from lib2to3.pgen2.token import LESS
 from flask import Flask, render_template, request, redirect, Markup, abort
 import random, math
 
@@ -7,8 +6,6 @@ import random, math
 app = Flask(__name__)
 
 dirForItem = {}
-dirForOrder = {}
-
 
 @app.get('/')
 def event_form():
@@ -52,10 +49,6 @@ def registered_form():
     dirForItem[orderNum] = [isChecked, value, total, key1]
  
     return render_template('Enter_Orders.html', result=dirForItem)
-
-
-    
-
 
 
 
