@@ -1,6 +1,6 @@
 # Order Tracker
 
-A simple web application that lets users create and store different types of orders locally.
+A simple web application that lets users create and store different types of button orders locally.
 
 Users can select buttons that correspond to a price(Red = $1.23, Green = $3.75, Blue = $2.50). 
 
