@@ -1,4 +1,4 @@
-# Order Tracker
+# Button Shop
 
 A simple web application that lets users create and store different types of button orders locally.
 
@@ -8,7 +8,7 @@ Users can then input the quantity for that order and have the option to donate t
 
 The order is then stored locally, and donations are highlighted.
 
-Users also have the option to delete their orders.
+Users also have the option to view/delete their orders.
 
 
 # Homepage 
